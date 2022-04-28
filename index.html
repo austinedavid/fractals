@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patterns using canvas</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #canvas{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+            background-color: black;
+        }
+        .random{
+            position: absolute;
+            padding: 4px;
+            border: 2px solid white;
+           min-width: 200px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        button{
+            padding: 4px;
+            width: 100%;
+        }
+        label, input{
+            color: yellow;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="random"><button id="randomizebtn">Randomize</button>
+        <input id="spread" type="range" min="0.1" max="3.1" step="0.02" value="1">
+        <label id="spreadlabel" for="spread">spread:</label>
+        <div>
+            <input id="sideNumber" type="range" min="2" max="15" step="1" value="6">
+            <label id="sideNumber_label" for="sideNumber">sides:</label>
+        
+        </div>
+        <button id="resetBtn">Reset All</button>
+       
+    </div>
+    <script src="tree.js"></script>
+</body>
+</html>
